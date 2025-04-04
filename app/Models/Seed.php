@@ -21,7 +21,7 @@ class Seed extends Model
 
     public function samples()
     {
-        return $this->hasMany(Sample::class); // Si tienes una relación con otro modelo llamado Sample
+        return $this->hasMany(Sample::class); 
     }
 }
 
