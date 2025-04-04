@@ -1,19 +1,22 @@
 <?php
 
 namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
+use App\Models\Region;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+
 
 class Sample extends Model
 {
     use HasFactory;
 
-    public function seed()
-    {
-        return $this->belongsTo(Seed::class);
-    }
+    protected $fillable = [
+        'accession_number',
+        'collection_date',
+        'location',
+        'collector_name',
+        'description'
+    ];
 
     public function region()
     {
