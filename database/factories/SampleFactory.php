@@ -12,7 +12,7 @@ class SampleFactory extends Factory
     public function definition(): array
     {
         return [
-            'accession_number' => $this->faker->unique()->bothify('ACC-####'),
+            'accession_number' => $this->faker->unique()->bothify('ACC-####'),   // Genera un número de acceso único con el formato 'ACC-####'
             'collection_date' => $this->faker->date(),
             'location' => $this->faker->city(),
             'collector_name' => $this->faker->name(),

@@ -20,8 +20,8 @@ return new class extends Migration
             $table->text('observations')->nullable();
             $table->timestamps();
 
-            // FK opcional, descomentar cando tenga la tabla samples
-            // $table->foreign('sample_id')->references('id')->on('samples')->onDelete('cascade');
+            // Relación foránea
+             $table->foreign('sample_id')->references('id')->on('samples')->onDelete('cascade');
         });
     }
 
