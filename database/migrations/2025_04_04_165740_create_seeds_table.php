@@ -10,7 +10,7 @@ class CreateSeedsTable extends Migration
     {
         Schema::create('seeds', function (Blueprint $table) {
             $table->id();
-            $table->string('scientific_name');  // Cambié 'nombre_cientifico' a 'scientific_name'
+            $table->string('scientific_name');  // Cambié 'nombre_cientifico' a 'scientific_name' Por que me genero errores
             $table->string('family');
             $table->string('genus');
             $table->enum('conservation_status', ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE']);

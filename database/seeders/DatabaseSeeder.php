@@ -6,15 +6,15 @@ use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-
 class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // Aquí se llama al SeedSeeder
+        // Aquí se llaman a todos los seeders necesarios
         $this->call([
             SeedSeeder::class,
-            // puedes agregar otros seeders si los tienes
+            RegionSeeder::class,
+
         ]);
     }
 }
